@@ -6,7 +6,11 @@ import connectDB from "./db/index.js";
 dotenv.config({
   path: "./env",
 });
-connectDB();
+connectDB()
+  .then()
+  .catch((err) => {
+    console.log(first);
+  });
 
 /*
 import express from "express";
